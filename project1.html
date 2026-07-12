@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link   rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+    <h1>University Registration Form </h1>
+    <P> Please fill out the form below to register .</P>
+    <hr>
+    <h2>Personal Details</h2>
+    <label for="fname">First Name : </label>
+    <input type="text" name="name" id="fname" placeholder="e.g., Arjun" required>
+    <br><br>
+    <label for="lname">Last Name : </label>
+    <input type="text" name="surname" id="lname" placeholder="e.g., Kumar">
+    <br><br>
+    <label for="dob">D.O.B : </label>
+    <input type="date" name="daob" id="dob" required>
+     <br><br>
+
+     <h3>Gender: </h3>
+     <label for="male">
+        <input type="radio" name="gender" id="male">Male</label>
+     <br>
+     <label for="female">
+        <input type="radio" name="gender" id="female">Female</label>
+     <br>
+     <label for="others">
+        <input type="radio" name="gender" id="others">Others</label>
+     
+     <br><br>
+     
+     <h3>Upload yur Photo:</h3>
+     <input type="file" >
+     <br><br>
+     <hr>
+
+
+     <h2>Contact Information </h2>
+     <label for="mail">Email Address:</label>
+     <input type="email" name="email" id="mail" placeholder="you@example.com" required>
+     <br><br>
+     <label for="phone">Phone Number:</label>
+     <input type="tel" name="num" id="phone" placeholder="e.g., 9685395710" required>
+     <br><br>
+     <label for="mailadd">Mailing Address:</label>
+     <br>
+     <textarea id="mailadd" name="mainaddress" rows="4" colms="32" placeholder="Street Address, City, State, ZIP Code"></textarea>
+     <br><br>
+     <hr>
+
+
+     <h2>Academic Information</h2>
+     
+     <label for=" course"> Select Your Course:</label>
+     <br>
+     <select id="course" name="course" required>
+        <option value="">--Choose a course--</option>
+        <option value="btech">B.Tech</option>
+        <option value="bca">BCA</option>
+        <option value="bpt">BPT</option>
+        <option value="mca">MCA</option>
+        <option value="mtech">M.Tech</option>
+     </select>
+     <br><br>
+     
+     <h3>Extracurricular Interests:</h3>
+     <label for="Sports">
+        <input type="checkbox" name="Interest" id="Sports">Sports</label>
+     <br>
+     <label for="music">
+        <input type="checkbox" name="Interest" id="music">Muisic & Arts</label>
+     <br>
+     <label for="Tech">
+        <input type="checkbox" name="Interest" id="Tech">Technology Clubs</label>
+     <br>
+     <label for="volunteer">
+        <input type="checkbox" name="Interest" id="volunteer">Volunteering</label>
+     
+     <br><br>
+     <hr>
+
+
+     <h2>Create Your Account</h2>
+     <label for="password">Create a Password:</label>
+     <input type="password" name="password" id="password" required>
+     <br><br>
+     <label for="securityques">Security Question:</label>
+     <select id="securityques" name="security question">
+        <option value="pet name">What was your first pet's name?</option>
+        <option value="fathername">What is your father's name?</option>
+        <option value="mothername">What is your mother's name?</option>
+        <option value="brothername">What is your brother's name?</option>
+     </select>
+     <br><br>
+     <label for="securityans">Security Answer:</label>
+     <input type="text" name="security" id="securityans" >
+     <br><br>
+     <label for="terms">
+        <input type="checkbox" name="terms" id="terms" style="accent-color: rgb(40, 37, 100);" required>   I agree to the Terms and Conditions. </label>
+        <br><br>
+        <hr>
+
+        <button type="submit" >Register</button>
+        <button type="reset" >Clear Form</button>
+        </form>
+    </body>
+</html>
